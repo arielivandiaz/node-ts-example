@@ -1,18 +1,3 @@
-# Version Contorl
-autocommit.sh
-version
-
-# Dist directory
-dist
-
-# Mac Files
-.DS_Store
-*/DS_Store
-
-# Compiled ts
-build
-
-
 # Logs
 logs
 *.log
@@ -20,10 +5,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+test-report.xml
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
+src/*.js
 # Runtime data
 pids
 *.pid
@@ -85,6 +71,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -114,5 +101,38 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
+# Stryker
+.stryker-tmp/
+reports/
+
 # TernJS port file
 .tern-port
+
+.idea/
+
+# compiled output
+/dist
+/node_modules
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
